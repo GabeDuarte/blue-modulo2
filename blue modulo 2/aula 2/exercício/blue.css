@@ -1,0 +1,16 @@
+.body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titulo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    background-color: midnightblue;
+    color: white;
+    padding: 10px;
+}
