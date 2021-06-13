@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Html com Python + Flask</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <form method="POST" class="form_completo">
+        <div class="form_bloco">
+            <label for="usuario_nome" class="form_label">
+                Digite seu nome:
+            </label>
+            <input type="text" name="usuario_nome" id="usuario_nome" placeholder="Jorginho betão" required />
+        </div>
+
+
+        <div class="form_bloco">
+            <label for= "usuario_sobrenome" class="form_label">
+                Digite seu sobrenome:
+            </label>
+            <input type="text" name="usuario_sobrenome" id="usuario_sobrenome" placeholder="da silva" required />
+        </div>
+
+
+        <div class="form_bloco">
+            <input type="radio" name="apenas_uma_opcao" id="apenas_uma_opcao" value="Masculino" checked/>
+            <label for="apenas_uma_opcao">Masculino</label>
+
+            <input type="radio" name="apenas_uma_opcao" id="apenas_uma_opcao2" value="Feminino"/>
+            <label for="apenas_uma_opcao2">Feminino</label>
+
+        </div>
+
+
+        <div class="form_bloco">
+            <input type="checkbox" name="multiplas_opcoes" id="multiplas_opcoes1" value="Eu sou Bluemer" />
+            <label for="multiplas_opcoes1">Eu sou Bluemer</label>
+
+            <input type="checkbox" name="multiplas_opcoes" id="multiplas_opcoes2" value="Blue"/>
+            <label for="multiplas_opcoes2">Blue</label>
+
+        </div>
+
+
+        <div class="form_bloco">
+            <input type="submit" class="form_enviar" value="Enviar tipo input"/>
+        </div>
+
+        <div class="form_bloco">
+            <button type="submit"> Enviar tipo botão </button>
+        </div>
+    
+    </form>
+    
+</body>
+</html>

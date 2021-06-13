@@ -1,8 +1,7 @@
-.body{
-    background-color: grey;
-    color:white;
-    padding: 10;
-    align-items: center;
+
+.painel1{
+    border: blue;
+    border-style: solid;
 }
 
 .nome-container{
@@ -13,18 +12,24 @@
 }
 
 .corpo-container{
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
-    background-color: lightgrey;
+    background-image: url(img/back.gif) ;
+    background-size: cover;
     font: bolder;
     color:  black;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
 }
 
+h1{
+    text-shadow: 2px 2px 2px  black, 2px 2px 2px black, 3px 3px 3px black, 3px 3px 3px black;
+    color: white;
+}
+
+
+
 .titulo-container{
-    color:brown;
+    color:black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,12 +37,14 @@
     align-items: center;
 }
 
+
 .items-container{
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 
@@ -45,7 +52,8 @@ button{
     display: block;
     border-radius: 25px;
     margin: auto;
-    background-color: darkred;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
     font-size: 20px;
 }
 
@@ -56,3 +64,13 @@ button{
     align-items: center;
 }
     
+.Personagem{
+    background-color: rgba(128, 128, 128, 0.144);
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black, 3px 3px 3px black, 3px 3px 3px black;
+
+}

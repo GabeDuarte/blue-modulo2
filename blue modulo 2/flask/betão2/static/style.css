@@ -1,0 +1,23 @@
+.conteudo{
+    background-color: rgb(250, 215, 215);
+    color:brown;
+    border: black;
+    border-style: solid;
+    width: 600;
+    height: 600;
+}
+
+
+
+.bloco{
+    font-family: 'Courier New', Courier, monospace;
+    font: bolder;
+    color: chocolate;
+    
+}
+
+
+.imagem{
+    width: 200;
+    height: 200;
+}
