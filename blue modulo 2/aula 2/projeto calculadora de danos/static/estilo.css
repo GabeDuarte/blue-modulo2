@@ -1,0 +1,119 @@
+body{
+    background-color: black;
+    width: auto;
+    height: auto;
+
+}
+.titulo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font: bolder;
+}
+
+
+
+
+.corpo-calculadora{
+    
+    font-size: 20px;
+    font:bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    filter: grayscale(2px);
+    text-shadow: 2px 2px 2px  black, 2px 2px 2px black, 3px 3px 3px black, 3px 3px 3px white;
+   
+}
+
+h1{
+    font-size: 20px;
+    text-shadow: 2px 2px 2px  black, 2px 2px 2px black, 3px 3px 3px black, 3px 3px 3px white;
+    color: white;
+}
+
+
+
+
+
+.items-container{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+button{
+    display: block;
+    border-radius: 25px;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.527);
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px  black, 2px 2px 2px black, 3px 3px 3px black, 3px 3px 3px black;
+}
+
+
+.items-container div{display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.elemento p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.elementos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+    
+.personagem{
+  
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black, 3px 3px 3px black, 3px 3px 3px black;
+
+}
+
+.arma{
+    
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black, 3px 3px 3px black, 3px 3px 3px black;
+
+}
+
+.selecionado {
+    border: 2px solid rgb(255, 0, 34);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#back{
+    background-image: url(../static/back.gif) ;
+    width: 800;
+    height:800;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+}

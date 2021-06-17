@@ -1,0 +1,34 @@
+body{
+    font-family: cursive;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.corpo{
+    background-color: lightblue;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 40px;
+    
+}
+
+.elementos{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 10px;
+}
+
+.botao{
+    background-color: cadetblue;
+    color: white;
+
+}

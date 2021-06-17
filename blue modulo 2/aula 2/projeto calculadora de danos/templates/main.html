@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/estilo.css" />
+    <meta charset = "UTF-8">
+    <title>Calculadora de danos.</title>
+    <script src="../static/main.js"></script>
+</head>
+
+<body onload="iniciar()">
+    <div id="back">
+        <div class="corpo-calculadora">
+
+            <div >
+                <div class="titulo-container">
+                    <h1>Selecione um inimigo</h1>
+                </div>
+
+
+                <div  class="elementos-container">
+                    
+                    <div class="elemento personagem" id="orc">
+                        <img src="../static/orc.png" alt="Orc" width="150" height="150"/>
+                        <p>Orc</p>      
+                    </div>
+
+                    <div class="elemento personagem" id="goblin">
+                        <img src="../static/globin.png" alt="Goblin" width="150" height="150"/>
+                        <p>Goblin</p>
+                    </div>
+
+                    <div class="elemento personagem" id="feiticeira">
+                        <img src="../static/feiticeira.png" alt="Feiticeira" width="150" height="150"/>
+                        <p>Feiticeira</p>                
+                </div>
+            </div>
+
+            <div class="titulo-container">
+                <h1>Selecione uma arma</h1>
+            </div>
+
+            <div>
+                <div class="elementos-container">
+                    <div class="elemento arma" id="soco">
+                        <img src="../static/soco.png" alt="Soco" width="100" height="100"/>
+                        <p>soco</p>
+                    </div>
+
+                    <div class="elemento arma" id="arco">
+                        <img src="../static/arco.png" alt="Arco" width="100" height="100"/>
+                        <p>Arco</p>
+                    </div>
+
+                    <div class="elemento arma" id="espada">
+                        <img src="../static/espada.png" alt="Espada" width="100" height="100"/>
+                        <p>Espada</p>
+                    </div> 
+                </div>    
+            </div>
+
+            
+            <div class="botao-container">
+                <button id="calcular" type="button" >Calcular dano</button>
+            </div>
+
+            <div class="titulo-container" >
+                <span  id="dano"></span>
+            </div>
+            
+
+        </div>
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
