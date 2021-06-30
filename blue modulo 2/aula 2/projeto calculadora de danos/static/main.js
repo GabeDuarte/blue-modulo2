@@ -80,6 +80,7 @@ function limparElementosSelecionados(tipo) {
     }
 }
 
+
 function rolarOsDados() {
     const min = Math.ceil(1);
     const max = Math.floor(10);

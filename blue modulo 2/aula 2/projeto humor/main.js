@@ -26,11 +26,11 @@ function atualizarHumor(){
 
     if (pessoa.feliz){
         elementoImagem.src = pessoa.imagemFeliz;
-        bloco_humor.innerText = pessoa.nome + " tá feliz! "  ;
+        bloco_humor.innerText = pessoa.nome + "tá feliz! "  ;
     }
     else{
         elementoImagem.src = pessoa.imagemRaiva;
-        bloco_humor.innerText = pessoa.nome + ' tá com raiva!';
+        bloco_humor.innerText = pessoa.nome + 'tá com raiva!';
     }
 }
 
