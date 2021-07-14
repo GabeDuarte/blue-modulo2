@@ -2,7 +2,9 @@ const express = require("express");
 
 const app = express();
 
-const port = 4040;
+const port = 4042;
+
+app.use(express.json())
 
 const legumes = [
   "abóbora",
@@ -28,8 +30,9 @@ app.get("/legumes", (req, res) => {
   res.send(legumes);
 });
 
+// [GET] pega legumes por id, retorna um único legume
 app.get("/legumes/:id", (req, res) => {
-  const id = req.params.id - 1;
+  const id = req.params.id-1;
   const legume = legumes[id];
 
   if (!legume) {
@@ -38,6 +41,18 @@ app.get("/legumes/:id", (req, res) => {
   }
 
   res.send(`<h1> ${legume} </h1>`);
+});
+
+
+
+app.post("/legumes", (req, res) => {
+  const legume = req.body.legume;
+
+  const id = legumes.length;
+
+  legumes.push();
+
+  res.send(`Legume ${legume} adicionado com sucesso! id do legume: ${id+1}. `);
 });
 
 app.listen(port, () => {
