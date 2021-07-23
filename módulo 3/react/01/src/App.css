@@ -1,0 +1,37 @@
+.conteudo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 2px;
+  padding: 2px;
+}
+
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  height: 400px;
+  width: 400px;
+  color: teal;
+  display: flex;
+  background-color: darkgray;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  border-radius: 20px;
+  padding: 2px;
+  margin: 10px;
+}
+
+.item img{
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.main{
+  justify-content: center;
+}
