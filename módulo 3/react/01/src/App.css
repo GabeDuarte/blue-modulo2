@@ -1,29 +1,66 @@
 .conteudo {
-  display: grid;
-  justify-content: center;
-  align-content: center;
+
   margin: 2px;
   padding: 2px;
 }
 
+.editando{
+  border: black 2px solid;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  padding: 4px;
+  font-size: 14px;
+}
+.editando form{
+  line-height: 4px;
+}
 
+.cabecalho{
+  height: 100vh;
+  width: 100vw;
+ display: flexbox;
+ flex-direction: row;
+ justify-content: center;
+
+}
+
+.main{
+  align-items: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 .title{
   display: flex;
   justify-content: center;
 }
 
-.item {
-  height: 400px;
-  width: 400px;
-  color: teal;
+
+.botoes{
   display: flex;
-  background-color: darkgray;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 15px;
+  width: 120px;
+}
+.item {
+  height: 450px;
+  line-height: 4px ;
+  width: 400px;
+  color:steelblue;
+  display: flex;
+  background-color:lightgrey;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid black 2px;
   border-radius: 20px;
-  padding: 2px;
+  padding: 4px;
   margin: 10px;
 }
 
