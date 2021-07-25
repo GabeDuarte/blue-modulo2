@@ -1,8 +1,7 @@
 import React from "react";
 
-import "./App.css";
-
-
+import "./inicio.css";
+import { Link } from "react-router-dom";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -146,118 +145,34 @@ export default class App extends React.Component {
     <html> 
       <body>
         <main className="main">
-          {/* <div className='Cabecalho'>
-            <div className='editando'>
-              <h2>
-                {editando?`Editando:${series[indexEditando]?.nome}`:"Cadastrar uma nova serie"}
-              </h2>
-              <form onSubmit={this.onSubmit}>
-                <input placeholder = 'nome' value={nomeSerie} onChange={(e)=>{
-                  this.setState({
-                    nomeSerie: e.target.value
-                  });
-                }}/>
-                <br></br>
-                <input placeholder = 'URL da imagem' value={imagem_urlSerie} onChange={(e)=>{
-                  this.setState({
-                    imagem_urlSerie: e.target.value
-                  });
-                }}/>
-                <br></br>
-                <input placeholder = 'Ano de lançamento' value={ano_lancamentoSerie} onChange={(e)=>{
-                  this.setState({
-                    ano_lancamentoSerie: e.target.value
-                  });
-                }}/>
-                <br></br>
-                <input placeholder = 'Quantidade de temporadas' value={qtd_tempSerie} onChange={(e)=>{
-                  this.setState({
-                    qtd_tempSerie: e.target.value
-                  });
-                }}/>
-                <br></br>
-                <button typr='submit'>enviar</button>
-              </form>
-            </div>
-            <hr/>
-          </div> */}
-
           <header>
             <div className="Cabecalho">
               <nav>
+              
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Series</a></li>
-                  <li><a href="#">Sobre</a></li>
+                  <li><Link to='/'>Home</Link></li>
+                  <li><Link to='/series'>Series</Link></li>
+                  <li><Link to ='/sobre'>Sobre</Link></li>
                 </ul>
               </nav>
             </div>
           </header>
-          <h1>Series</h1>
-          <div className="conteudo">
-           <main>
-             <div className='flex-container'>
-               {series.map((s, index) => (
-                 <div className="item">
-                   <h2>Nome: {s.nome}</h2>
-                   <img src={s.imagem_url} alt={s.nome}></img>
-                   <h3>Ano de lançamento: {s.ano_lancamento}</h3>
-                   <h3>Quantidade de temporadas: {s.qtd_temp}</h3>
-                   <div className='botoes'>
-                    <button onClick={() => this.deletar(index)}>Deletar</button>
-                    <br/>
-                    <button
-                    onClick={()=>{
-                      this.setState({
-                        editando: true,
-                        nomeSerie: s.nome,
-                        imagem_urlSerie: s.imagem_url,
-                        ano_lancamentoSerie: s.ano_lancamento,
-                        qtd_tempSerie: s.qtd_temp,
-                      });
-                    }}
-                    >Editar
-                    </button>
-                   </div>
-                </div>
-               ))}
-             </div>
-           </main>
-         </div>
-         <footer>
-           <ul>
-             <li>Desenvolvido por: Gabriel Soares.</li>
-             <li> WhatsApp: 61 99445-2945 </li>
-           </ul>
-         </footer>
+          <div className='Conteudo-inicio1'>
+            <h1>Lorem Ipsum</h1>
+            <p>
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+            </p>
+            <hr></hr>
+          </div>
+          <div className='Conteudo-inicio2'>
+            <h1>The standard Lorem Ipsum passage, used since the 1500s</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+          </div>
         </main>
       </body>
     </html> 
     )
   }
-
-
-
-  // render() {
-  //   const { series } = this.state;
-  //   return (
-  //     <body>
-  //       <div className='title'><h1>Series</h1></div>
-  //       <div className="conteudo">
-  //         <main>
-  //           <div >
-  //             {series.map((serie) => (
-  //               <div className="item">
-  //                 <h2>Nome: {serie.nome}</h2>
-  //                 <img src={serie.imagem_url} alt={serie.nome}></img>
-  //                 <h3>Ano de lançamento: {serie.ano_lancamento}</h3>
-  //                 <h3>Quantidade de temporadas: {serie.qtd_temp}</h3>
-  //               </div>
-  //             ))}
-  //           </div>
-  //         </main>
-  //       </div>
-  //     </body>
-  //   );
-  // }
 }

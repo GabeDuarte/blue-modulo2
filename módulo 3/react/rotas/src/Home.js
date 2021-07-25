@@ -4,21 +4,19 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import App from './inicio'
+import './inicio.css'
 
 const Home = () =>{
   return (
     <div>
-      <h1>Página Inicial</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/sobre">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/usuario">Usuario</Link>
-          </li>
-        </ul>
-      </nav>
+      <App></App>
+      <footer>
+           <ul>
+             <li>Desenvolvido por: Gabriel Soares.</li>
+             <li> WhatsApp: 61 99445-2945 </li>
+           </ul>
+         </footer>
     </div>
   );
 }
